@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us - encirkel</title>
+    <link rel="stylesheet" href="./about.css">
+</head>
+
+<body>
+    <!-- Making Navbar  -->
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><img src="./assest/logo.png.png" class="logo"></div>
+            <div class="mobile-menu-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul>
+                <li class="button-1"><a href="./index.html">Home</a></li>
+                <li class="button-1"><a href="./about.html">About</a></li>
+                <li class="button-1"><a href="./services.html">Services</a></li>
+                <li class="button-1"><a href="./schedule.html">Schedule Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Making Section-1 -->
+    <div class="hero-section">
+        <div class="hero-item2">
+            <h1>About Us</h1>
+        </div>
+    </div>
+
+    <!-- Making Section-2 -->
+    <div class="container-p2">
+        <div class="container-p3">
+            <h1 class="text-p2">Our Team</h1>
+        </div>
+        <!--Making Section-3  -->
+        <div class="about-container">
+            <div class="about-card c-2">
+                <div class="card-work">
+                    <img src="./assest/Ceo.png" class="img-p2">
+                </div>
+
+                <div class="content-p2">
+                    <h3 class="text-p2">Dommy-1</h3>
+                    <p class="text-grey-p2">Founder and Ceo</p>
+                </div>
+            </div>
+
+            <div class="about-card c-2">
+                <div class="card-work">
+                    <img src="./assest/co-founder.png" class="img-p2">
+                </div>
+
+                <div class="content-p2">
+                    <h3 class="text-p2">Dommy-2</h3>
+                    <p class="text-grey-p2">Co-founder and lead strategist</p>
+                </div>
+            </div>
+            <div class="about-card c-2">
+                <div class="card-work">
+                    <img src="./assest/Creative-Director.png" class="img-p2">
+                </div>
+
+                <div class="content-p2">
+                    <h3 class="text-p2">Dommy-3</h3>
+                    <p class="text-grey-p2">Founder and Creative Director</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="footer-item1">
+                    <h2>Encirckel.com</h2>
+                    <span>Encirckel 97335, Lulea Sweden</span>
+                </div>
+                <div class="footer-item1">
+                    <h2>Talk To Us!</h2>
+                    <span>0046760542671</span>
+                    <span>info@ecirckel.com</span>
+                </div>
+                <div class="footer-item2">
+                    <h2>Free Ebook</h2>
+                    <span>5 easy ways to make your message clear for your brand</span>
+                    <form class="footer-item3">
+                        <label>Name</label>
+                        <input>
+                        <label>Email</label>
+                        <input>
+                        <button class="i4">Subscribe</button>
+                    </form>
+                </div>
+                <div class="i5">
+                    <h2>Quick Links</h2>
+                    <h2>
+                        <ul class="i6">
+                            <li class="i8"><a href="./index.html" target="_blank">Home</a></li>
+                            <li class="i8"><a href="./about.html" target="_blank">About</a></li>
+                            <li class="i8"><a href="./services.html" target="_blank">Services</a></li>
+                            <li class="i8"><a href="./schedule.html" target="_blank">Schedule</a></li>
+                        </ul>
+                        <ul class="i7">
+                            <li>
+                                <a href=""><img src="./assest/Facebook.png"></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="./assest/Instagram.png"></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="./assest/Twitter.png"></a>
+                            </li>
+                        </ul>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+      // Mobile menu toggle functionality
+      const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+      const navMenu = document.querySelector('.navdiv ul');
+      
+      mobileMenuToggle.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+      });
+      
+      // Close menu when clicking on a link
+      const navLinks = document.querySelectorAll('.navdiv ul li a');
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('active');
+        });
+      });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule now - encirkel</title>
+    <link rel="stylesheet" href="./schedule.css">
+</head>
+<body>
+  <!-- Making Navbar  -->
+  <nav class="navbar">
+    <div class="navdiv">
+        <div class="logo"><img src="./assest/logo.png.png" class="logo"></div>
+        <div class="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul>
+            <li class="button-1"><a href="./index.html">Home</a></li>
+            <li class="button-1"><a href="./about.html">About</a></li>
+            <li class="button-1"><a href="./services.html">Services</a></li>
+            <li class="button-1"><a href="./schedule.html">Schedule Now</a></li>
+        </ul>
+    </div>
+    </nav>
+
+    <!-- Making Section-1 -->
+    <div class="hero-section">
+        <div class="hero-item2"><h1>Talk To Us</h1></div>
+    </div>
+
+    <!-- Making Section-2 -->
+     <div class="container-p5">
+        <div class="container-p6">
+            <h1 class="text-p5">Let's Talk</h1>
+        </div>
+
+        <div class="sub-container-p5">
+            <p>Simplicity fosters innovation! We use a storybrand strategy to assist you reach <br> to your clients 
+                and make your business marketing easier. The heart of your<br> business should be developing relationships 
+                and trust with clients.<br>Encirkel enjoys listening to your needs and determining the best method to<br> 
+                assist you. Please fill out the form with your needs and specifications, and we <br>will get back 
+                to you as soon as possible.</p>
+        </div>
+    </div>
+<div class="form-div">
+     <div class="form-p6">
+        <div class="form-p5">
+            <label>Name Of Business</label>
+            <input type="text" class="p-5">
+        </div> 
+        <div class="form-p5">   
+            <label>Full Name</label>
+            <input type="text" class="p-5">
+        </div>
+        <div class="form-p5">    
+            <label>Email</label>
+            <input type="email" class="p-5">
+        </div>
+        <div class="form-p5">    
+            <label>Phone Number</label>
+            <input type="number" class="p-5">
+        </div>
+        <div class="p-5">    
+            <input type="submit" class="p-5 btn" >
+        </div>
+        </div>
+    </div>   
+
+
+ <!-- Footer -->
+ <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <div class="footer-item1">
+                <h2>Encirckel.com</h2>
+                <span>Encirckel 97335, Lulea Sweden</span>
+            </div>
+            <div class="footer-item1">
+                <h2>Talk To Us!</h2>
+                <span>0046760542671</span>
+                <span>info@ecirckel.com</span>
+            </div>
+            <div class="footer-item2">
+                <h2>Free Ebook</h2>
+                <span>5 easy ways to make your message clear for your brand</span>
+                <form class="footer-item3">
+                    <label>Name</label>
+                    <input>
+                    <label>Email</label>
+                    <input>
+                    <button class="i4">Subscribe</button>
+                </form>
+            </div>
+            <div class="i5">
+                <h2>Quick Links</h2>
+                <h2>
+                    <ul class="i6">
+                        <li class="i8"><a href="index.html">Home</a></li>
+                        <li class="i8"><a href="./about.html">About</a></li>
+                        <li class="i8"><a href="./services.html">Services</a></li>
+                        <li class="i8"><a href="./schedule.html">Schedule</a></li>
+                    </ul>
+                    <ul class="i7">
+                        <li>
+                            <a href=""><img src="./assest/Facebook.png"></a>
+                        </li>
+                        <li><a href=""><img src="./assest/Instagram.png"></a></li>
+                        <li><a href=""><img src="./assest/Twitter.png"></a></li>
+                    </ul>
+                </h2>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+  // Mobile menu toggle functionality
+  const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+  const navMenu = document.querySelector('.navdiv ul');
+  
+  mobileMenuToggle.addEventListener('click', function() {
+    navMenu.classList.toggle('active');
+  });
+  
+  // Close menu when clicking on a link
+  const navLinks = document.querySelectorAll('.navdiv ul li a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+    });
+  });
+</script>
+</body>
+</html>
